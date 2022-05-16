@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-08T20:03:17.778Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2587149000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automatedtest.sample.infrastructure.driver.Setup.setWebDriver()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Search cucumber studio",
+        "description": "",
+        "id": "search;search-cucumber-studio;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 92943000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automatedtest.sample.infrastructure.driver.TearDown.quitDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1415682000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "A user navigates to HomePage \"fr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fr",
+                  "offset": 30
+                }
+              ],
+              "location": "com.automatedtest.sample.homepage.HomePageSteps.aUserNavigatesToHomePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3133177000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "a user searches for \"cucumber studio\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber studio",
+                  "offset": 21
+                }
+              ],
+              "location": "com.automatedtest.sample.homepage.HomePageSteps.aUserSearchesFor(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55177000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"CucumberStudio\" is displayed in the first \"3\" results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CucumberStudio",
+                  "offset": 1
+                },
+                {
+                  "val": "3",
+                  "offset": 44
+                }
+              ],
+              "location": "com.automatedtest.sample.searchresultpage.SearchResultPageSteps.isDisplayedInTheFirstResults(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          },
+          {
+            "name": "@search_01"
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/automatedtest/sample/Search.feature",
+    "tags": []
+  }
+]
